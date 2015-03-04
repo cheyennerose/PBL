@@ -1,0 +1,117 @@
+/*#57cff2 - blue
+#ffc364 - yellow
+#636363 - grey
+#1593de - dark blue
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+body {
+    background-color: #47A8C4;
+    font-family: "Lato", sans-serif;
+    color: white;
+}
+
+h1 {
+    color: #636363;
+}
+
+.header {
+    color: white;
+    height: 100px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.logo {
+    background: url("../logo.png") no-repeat;
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin: 27px 27px 27px 120px;
+}
+
+.nav {
+    text-align: right;
+    position: relative;
+    right: 120px;
+    top: 43.5px;
+    font-size: .8em;
+}
+
+.nav li {
+    list-style-type: none;
+    display: inline;
+    padding: 25px;
+}
+
+.nav li:hover {
+    color: black;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s ease;
+}
+
+.nav a:hover {
+    color: black;
+}
+
+.introduction {
+    height: 60%;
+}
+
+.introcontent {
+    width: 400px;
+    position: relative;
+    left: 20%;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+}
+
+.video {
+    background-color: #ffc364;
+    height: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.media,
+.vidcontent {
+    width: 400px;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.media {}
+
+.videcontent {
+    position: relative;
+    left: 50%;
+    top: -100px;
+}
+
+.footer {
+    background-color: #636363;
+    height: auto;
+    text-align: right;
+    padding: 20px;
+}
+
+.footer ul {
+    list-style-type: none;
+    display: inline;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer a:visited {
+    color: white;
+}
