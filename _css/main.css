@@ -1,5 +1,5 @@
 /*#57cff2 - blue
-#ffc364 - yellow
+#f4ba5f - yellow
 #636363 - grey
 #1593de - dark blue
 */
@@ -11,8 +11,16 @@ body {
     color: white;
 }
 
+b {
+    font-weight: 700;
+}
+
 h1 {
-    color: #636363;
+    color: #fff;
+}
+
+h3 /* formulas tag */ {
+    text-align: center;
 }
 
 .header {
@@ -71,7 +79,7 @@ h1 {
 }
 
 .video {
-    background-color: #ffc364;
+    background-color: #edb55a;
     height: auto;
     padding: 50px;
     text-align: center;
@@ -84,12 +92,23 @@ h1 {
     padding-top: 20px;
 }
 
-.media {}
+.media {
+    text-align: left;
+}
 
-.videcontent {
+.vidcontent {
     position: relative;
-    left: 50%;
     top: -100px;
+}
+
+.parabolic {
+    background-color: #c5c5c5;
+    height: auto;
+    padding: 50px;
+}
+
+.paratext {
+    width: 70%;
 }
 
 .footer {

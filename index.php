@@ -1,15 +1,16 @@
-<?php $pageTitle="" ; include( 'inc/header.php'); ?>
+<?php $pageTitle="Home" ; include( 'inc/header.php'); ?>
 
 <div class="container">
 
 
     <div class="introduction">
 
-        <p class="introcontent">
+        <div class="introcontent">
 
+            <h1>Introduction</h1>
             lorem ipsum dolor akjshflj  akdhsf lkajhdf jkalsdfh jkalsdfh ajf aljksdhfa ljkshjal  shfuiar yiuwehcnms djagdflaj sgdf uiyahef ijhbsz bm nm,sa  dbfjhadgfyghjdvafs,jhk fhufhuueg  uohfeohgehio geihegwhi
 
-        </p>
+        </div>
 
     </div>
 
