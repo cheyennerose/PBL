@@ -9,6 +9,7 @@ body {
     background-color: #47A8C4;
     font-family: "Lato", sans-serif;
     color: white;
+    font-size: 1.2em;
 }
 
 b {
@@ -17,17 +18,22 @@ b {
 
 h1 {
     color: #fff;
+    line-height: 1.2em;
 }
 
-h3 /* formulas tag */ {
+h3
+/* formulas tag */
+
+{
     text-align: center;
 }
 
 .header {
-    color: white;
+    color: black;
     height: 100px;
     padding-bottom: 20px;
     text-transform: uppercase;
+    color: #636363;
 }
 
 .logo {
@@ -77,38 +83,50 @@ h3 /* formulas tag */ {
     top: 40%;
     -webkit-transform: translateY(-50%);
 }
+/* Contact Form */
 
-.video {
-    background-color: #edb55a;
-    height: auto;
+.contact {
     padding: 50px;
+    line-height: 2em;
+    background-color: #449cbb;
+}
+
+form {
     text-align: center;
+
 }
 
-.media,
-.vidcontent {
-    width: 400px;
-    display: inline-block;
-    padding-top: 20px;
+form table {
+    width: 375px;
+    margin-bottom: 16px;
+    margin-left: 37.8%;
 }
 
-.media {
-    text-align: left;
+form th {
+    width: 85px;
+    vertical-align: middle;
+    padding: 8px;
 }
 
-.vidcontent {
-    position: relative;
-    top: -100px;
+form td {
+    padding: 15px 15px;
 }
 
-.parabolic {
-    background-color: #c5c5c5;
-    height: auto;
-    padding: 50px;
+form td select, form td input,form td textarea {
+   width: 100%;
 }
 
-.paratext {
-    width: 70%;
+form input[type="submit"] {
+    width: 375px;
+    text-align: center;
+    border: 1px solid #57cff2;
+    background: #57cff2;
+    color: #FFF;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 14px;
 }
 
 .footer {

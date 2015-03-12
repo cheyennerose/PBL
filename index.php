@@ -8,31 +8,84 @@
         <div class="introcontent">
 
             <h1>Introduction</h1>
-            lorem ipsum dolor akjshflj  akdhsf lkajhdf jkalsdfh jkalsdfh ajf aljksdhfa ljkshjal  shfuiar yiuwehcnms djagdflaj sgdf uiyahef ijhbsz bm nm,sa  dbfjhadgfyghjdvafs,jhk fhufhuueg  uohfeohgehio geihegwhi
+
+                Whether you know it or not, everything uses physics. Archery is a prime example of this: it uses projectile motion, parabolic motion, forces, energy, and more.
 
         </div>
 
     </div>
 
-    <div class="video">
+        <div class="contact">
 
-        <div class="media">
+<?php
 
-            <img src="http://placehold.it/350x200">
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $message = $_POST["message"];
+    $email_body = "";
+    $email_body = $email_body . "Name: " . $name . "\n";
+    $email_body = $email_body . "Email: " . $email . "\n";
+    $email_body = $email_body . "Message: " . $message;
 
-            <img src="http://placehold.it/350x200">
+    //TODO: Send Email
 
-        </div>
+    header("Location: contact.php?status=thanks");
+    exit;
+}
 
-        <div class="vidcontent">
-            <h1>jhgf yfhjfm </h1>lorem ipsum dolor akjshflj  akdhsf lkajhdf jkalsdfh jkalsdfh ajf aljksdhfa ljkshjal  shfuiar yiuwehcnms djagdflaj sgdf uiyahef ijhbsz bm nm,sa  dbfjhadgfyghjdvafs,jhk fhufhuueg  uohfeohgehio geihegwhi             lorem ipsum dolor akjshflj  akdhsf lkajhdf jkalsdfh jkalsdfh ajf aljksdhfa ljkshjal  shfuiar yiuwehcnms djagdflaj sgdf uiyahef ijhbsz bm nm,sa  dbfjhadgfyghjdvafs,jhk fhufhuueg  uohfeohgehio geihegwhi
-            lorem ipsum dolor akjshflj  akdhsf lkajhdf jkalsdfh jkalsdfh ajf aljksdhfa ljkshjal  shfuiar yiuwehcnms djagdflaj sgdf uiyahef ijhbsz bm nm,sa  dbfjhadgfyghjdvafs,jhk fhufhuueg  uohfeohgehio geihegwhi
 
+?>
+
+
+        <h1>Contact</h1>
+
+            <?php if (isset($_GET["status"]) AND $_GET["status"] === "thanks") { ?>
+                <p>Thanks for the email! I&rsquo;ll be in touch shortly</p>
+            <?php } else { ?>
+
+                <p>Please leave any questions, comments or concerns here</p>
+
+                <form method="post" action="contact.php">
+
+                <table>
+                    <tr>
+                        <th>
+                            <label for="name">Name</label>
+                        </th>
+                        <td>
+                            <input type="text" name="name" id="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="email">Email</label>
+                        </th>
+                        <td>
+                            <input type="text" name="email" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="message">Message</label>
+                        </th>
+                        <td>
+                            <textarea name="message" id="message"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="Send">
+
+                </form>
+
+            <?php } ?>
 
         </div>
 
     </div>
 
-</div>
+
+        </div>
+
 
 <?php include( 'inc/footer.php'); ?>
